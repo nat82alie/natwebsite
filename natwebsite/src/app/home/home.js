@@ -24,12 +24,18 @@ class Home extends Component {
           retrieve and process data to accomodate my front end tasks (aka I am perfectly comfortable with PHP and MySQL too).
         </Typography>
         <Typography variant="body1" className="home-typography">
+          Though my professional experience has solely been in web development, I am not closed off to other applications of
+          programming. I prefer higher level languages, am a fan of Python, Scala, and Racket, and think that working in bioinformatics
+          would be pretty rad. I despise mobile app development with my entire soul though - I took one class and pretty much
+          cried of frustration the whole time.
+        </Typography>
+        <Typography variant="body1" className="home-typography">
           I grew up in Washington, have been in California for the past 6 years, and am currently squatting in Minnesota
           until I find a job wherever that may be. And by "wherever" I mean Colorado, Oregon, Washington, Minnesota, or California,
           because I do have preferences.
         </Typography>
         <Typography variant="body1" className="home-typography">
-          Here is a photo of me so you can put a face to the name:
+          Also, here is a photo of me so you can put a face to the name:
         </Typography>
         <div id="natalie-pic-container">
           <img id="natalie-pic" src={PicOfMe} alt="Natalie Wagner"/>
