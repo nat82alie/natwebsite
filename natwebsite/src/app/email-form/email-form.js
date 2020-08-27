@@ -28,6 +28,7 @@ class EmailForm extends Component {
 
   /**
    * Render the EmailForm Component
+   * @returns {ReactElement}
    */
   render() {
     // TO DO: delete the <br/>'s & instead put each form field in their own div and add padding to the divs

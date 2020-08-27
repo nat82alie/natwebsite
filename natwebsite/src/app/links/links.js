@@ -8,6 +8,7 @@ import './links.css';
 class Links extends Component {
   /**
    * Render the Links component
+   * @returns {ReactElement}
    */
   render() {
     return (

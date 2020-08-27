@@ -10,6 +10,7 @@ import './App.css';
 class App extends Component {
   /**
    * Render the App component
+   * @returns {ReactElement}
    */
   render() {
     return (

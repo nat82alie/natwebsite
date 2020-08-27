@@ -9,6 +9,7 @@ import './home.css';
 class Home extends Component {
   /**
    * Render the Home component
+   * @returns {ReactElement}
    */
   render() {
     return (
