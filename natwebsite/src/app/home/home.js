@@ -3,7 +3,13 @@ import { Typography } from '@material-ui/core';
 import PicOfMe from '../../pic_of_me.jpg';
 import './home.css';
 
+/**
+ * Home class
+ */
 class Home extends Component {
+  /**
+   * Render the Home component
+   */
   render() {
     return (
       <div className="page-container">
