@@ -1,9 +1,6 @@
 #navbar-container {
   text-align: center;
   width: 100%;
-  height: 150px;
-  /* background-color: mediumslateblue; */
-  /* background-image: url('../../logo192.png'); */
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rubber_duckies_So_many_ducks.jpg/1920px-Rubber_duckies_So_many_ducks.jpg');
   background-size: cover; /* make ducks stretch to width of header */
   margin-left: 0px;
@@ -13,8 +10,11 @@
 }
 
 #navbar-title-container {
+  height: 100px;
+}
+
+#navbar-title {
   text-align: center;
-  /* font-size: 40px; */
   line-height: 100px;
 }
 
@@ -29,11 +29,23 @@
   margin-left: 0px;
   /* position: fixed;
   bottom: 0; */
-  position: absolute; 
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   color: white; /* color of navbar buttons' text */
 }
 
 Button {
   height: 100%;
+}
+
+.mui-dropdown .mui-btn--inherit {
+  background-color: maroon;
+  color: inherit;
+}
+
+/* .mui-dropdown__menu */
+.mui--is-open {
+  padding: 0px;
+  margin: 0px;
+  color: inherit;
 }
