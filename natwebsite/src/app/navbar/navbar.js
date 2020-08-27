@@ -49,6 +49,7 @@ class Navbar extends Component {
 
   /**
    * Render the Navbar component
+   * @returns {ReactElement}
    */
   render() {
     let linksUL = (

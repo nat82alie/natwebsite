@@ -4,7 +4,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from '../routes.js';
 import './App.css';
 
+/**
+ * App class
+ */
 class App extends Component {
+  /**
+   * Render the App component
+   * @returns {ReactElement}
+   */
   render() {
     return (
       <div className="App">

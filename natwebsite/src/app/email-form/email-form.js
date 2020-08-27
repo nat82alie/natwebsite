@@ -3,7 +3,13 @@ import { Typography, Button } from '@material-ui/core';
 import $ from 'jquery';
 import './email-form.css';
 
+/**
+ * EmailForm Class
+ */
 class EmailForm extends Component {
+  /**
+   * Send the email
+   */
   sendEmail() {
     let name = $('#contact-name')[0].value;
     let email = $('#contact-email')[0].value;
@@ -20,11 +26,14 @@ class EmailForm extends Component {
     // https://blog.mailtrap.io/react-send-email/
   }
 
+  /**
+   * Render the EmailForm Component
+   * @returns {ReactElement}
+   */
   render() {
     // TO DO: delete the <br/>'s & instead put each form field in their own div and add padding to the divs
     return (
       <div className="page-container">
-
         <Typography variant='h6'>
           Contact Form:
         </Typography>
