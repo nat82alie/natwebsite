@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
-import PicOfMe from '../../pic_of_me.jpg';
+import PicOfMe from '../../resources/pic_of_me.jpg';
 import './home.css';
 
 /**

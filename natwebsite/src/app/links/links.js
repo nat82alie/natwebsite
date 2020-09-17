@@ -13,17 +13,14 @@ class Links extends Component {
   render() {
     return (
       <div className="page-container">
-        <Typography variant='h6'>
-          My Links:
+        <Typography variant="h6">
+          Links:
         </Typography>
         <p>
-          <a href="https://www.linkedin.com/in/natwag/">LinkedIn Profile</a>
+          <a href="./mylinks.html">My Links</a>
         </p>
         <p>
-          <a href="https://github.com/nat82alie">GitHub Profile</a>
-        </p>
-        <p>
-          <a href="https://www.reddit.com/r/proplifting/">Favorite Subreddit</a>
+          <a href="./blmlinks.html">BLM Links</a>
         </p>
       </div>
     );
