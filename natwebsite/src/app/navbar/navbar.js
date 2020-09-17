@@ -92,7 +92,11 @@ class Navbar extends Component {
             Links
           </Button>
 
-          <Button color="inherit" onClick={() => this.navigateTo('emailnatalie.html')}>
+          {/* <Button color="inherit" onClick={() => this.navigateTo('emailnatalie.html')}>
+            Email Me
+          </Button> */}
+
+          <Button color="inherit" href={'mailto:nat82alie@gmail.com'}>
             Email Me
           </Button>
 
