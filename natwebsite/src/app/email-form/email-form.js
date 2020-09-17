@@ -55,7 +55,7 @@ class EmailForm extends Component {
           <input id="contact-subject" name="contact-subject"/><br/><br/>
 
           <label htmlFor="contact-email-body">
-            Email Body
+            Message
           </label><br/>
           <textarea id="contact-email-body" name="contact-email-body"/><br/><br/>
 

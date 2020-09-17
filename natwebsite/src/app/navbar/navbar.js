@@ -9,8 +9,17 @@ import './navbar.css';
  * implementation: https://www.muicss.com/docs/v1/react/dropdowns
  * Or Boostrap's dropdown, even tho I'm using MUI framework:
  * https://react-bootstrap.github.io/components/dropdowns/
+ * onHover event DNE in React https://upmostly.com/tutorials/react-onhover-event-handling-with-examples
  */
 class Navbar extends Component {
+  /**
+   * Navbar constructor
+   */
+  constructor() {
+    super();
+    this.dropdownClass = 'navbar-dropdown';
+  }
+  
   /**
    * Navigate to selected page
    * @param {string} page path of the page to navigate to
@@ -38,6 +47,7 @@ class Navbar extends Component {
    */
   closeDropdown(event) {
     // info on nativeEvent found here https://reactjs.org/docs/events.html
+    // .contains does not like when i use this.dropdownClass instead of 'navbar-dropdown'
     if (!event.nativeEvent.toElement.classList.contains('navbar-dropdown')) {
       // setTimeout(() => {
         // NOTE: All elements & children related to the dropdown must have the 'navbar-dropdown'
@@ -52,13 +62,13 @@ class Navbar extends Component {
    * @returns {ReactElement}
    */
   render() {
-    let linksUL = (
+    let linksDropdown = (
       <ul className="navbar-dropdown mui-dropdown__menu mui--is-open" style={{top: '39.5px'}}>
-        <li className="navbar-dropdown" style={{backgroundColor: 'indianred'}}>
-          <a href="links.html" className="navbar-dropdown">My Links</a>
+        <li className={this.dropdownClass} style={{backgroundColor: 'indianred'}}>
+          <a href="mylinks.html" className={this.dropdownClass}>My Links</a>
         </li>
-        <li className="navbar-dropdown" style={{backgroundColor: 'indianred'}}>
-          <a href="links.html" className="navbar-dropdown">BLM Links</a>
+        <li className={this.dropdownClass} style={{backgroundColor: 'indianred'}}>
+          <a href="blmlinks.html" className={this.dropdownClass}>BLM Links</a>
         </li>
       </ul>
     );
@@ -75,8 +85,9 @@ class Navbar extends Component {
             Home
           </Button>
 
-          <Button color="inherit" className="navbar-dropdown"
-            onMouseEnter={() => this.openDropdown(linksUL)}
+          <Button color="inherit" className={this.dropdownClass}
+            onClick={() => this.navigateTo('links.html')}
+            onMouseEnter={() => this.openDropdown(linksDropdown)}
             onMouseLeave={this.closeDropdown}>
             Links
           </Button>
@@ -87,7 +98,7 @@ class Navbar extends Component {
 
           <div id="navbar-secondary"
             onMouseLeave={this.closeDropdown}
-            className="navbar-dropdown mui-dropdown MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit"
+            className={`${this.dropdownClass} mui-dropdown MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-colorInherit`}
             style={{display: 'block', padding: '0px', borderWidth: '0px'}}>
           </div>
         </div>

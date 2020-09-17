@@ -1,7 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from './app/home/home.js';
-import Links from './app/links/links.js';
+import Home from './app/home/home';
+import Links from './app/links/links';
+import MyLinks from './app/links/my-links/my-links';
+import BLMLinks from './app/links/blm-links/blm-links';
 import EmailForm from './app/email-form/email-form';
 
 // a react routing guide: https://scotch.io/tutorials/routing-react-apps-the-complete-guide
@@ -9,6 +11,8 @@ import EmailForm from './app/email-form/email-form';
 const Routes = () => (
   <Switch>
     <Route path="/links.html" component={Links}/>
+    <Route path="/mylinks.html" component={MyLinks}/>
+    <Route path="/blmlinks.html" component={BLMLinks}/>
     <Route path="/emailnatalie.html" component={EmailForm}/>
     <Route path="/" component={Home} />
   </Switch>
