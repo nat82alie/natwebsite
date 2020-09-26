@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MyResume from '../../resources/Wagner_Resume.pdf';
-import './resume.css';
 
 /**
  * Resume class
