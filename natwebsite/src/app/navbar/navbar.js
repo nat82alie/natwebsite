@@ -85,6 +85,10 @@ class Navbar extends Component {
             Home
           </Button>
 
+          <Button color="inherit" onClick={() => this.navigateTo('resume.html')}>
+            Resume
+          </Button>
+
           <Button color="inherit" className={this.dropdownClass}
             onClick={() => this.navigateTo('links.html')}
             onMouseEnter={() => this.openDropdown(linksDropdown)}
