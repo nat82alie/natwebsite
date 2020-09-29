@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
-import './links.css';
 
 /**
  * Links class
