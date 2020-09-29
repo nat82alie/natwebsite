@@ -18,6 +18,7 @@ class Navbar extends Component {
   constructor() {
     super();
     this.dropdownClass = 'navbar-dropdown';
+    this.anchorClass = 'dropdown-btn';
   }
   
   /**
@@ -62,13 +63,26 @@ class Navbar extends Component {
    * @returns {ReactElement}
    */
   render() {
-    let linksDropdown = (
-      <ul className="navbar-dropdown mui-dropdown__menu mui--is-open" style={{top: '39.5px'}}>
-        <li className={this.dropdownClass} style={{backgroundColor: 'indianred'}}>
-          <a href="mylinks.html" className={this.dropdownClass}>My Links</a>
+    let ulClassList = 'navbar-dropdown mui-dropdown__menu mui--is-open';
+    let ulStyle = {top: '39.5px'};
+    let liStyle = {backgroundColor: 'indianred'};
+
+    let blmDropdown = (
+      <ul className={ulClassList} style={ulStyle}>
+        <li onClick={() => this.navigateTo('blm-info.html')} className={this.dropdownClass} style={liStyle}>
+          <a href="blm-info.html" className={this.dropdownClass}>
+            Info
+          </a>
         </li>
-        <li className={this.dropdownClass} style={{backgroundColor: 'indianred'}}>
-          <a href="blmlinks.html" className={this.dropdownClass}>BLM Links</a>
+        <li onClick={() => this.navigateTo('blm-petitions.html')} className={this.dropdownClass} style={liStyle}>
+          <a href="blm-petitions.html" className={this.dropdownClass}>
+            Petitions
+          </a>
+        </li>
+        <li onClick={() => this.navigateTo('blm-donate.html')} className={this.dropdownClass} style={liStyle}>
+          <a href="blm-donate.html" className={this.dropdownClass}>
+            Donate
+          </a>
         </li>
       </ul>
     );
@@ -89,19 +103,17 @@ class Navbar extends Component {
             Resume
           </Button>
 
-          <Button color="inherit" className={this.dropdownClass}
-            onClick={() => this.navigateTo('links.html')}
-            onMouseEnter={() => this.openDropdown(linksDropdown)}
-            onMouseLeave={this.closeDropdown}>
-            Links
+          <Button color="inherit" href={'mailto:nat82alie@gmail.com'}
+            // onClick={() => this.navigateTo('emailnatalie.html')}
+            >
+            Email Me
           </Button>
 
-          {/* <Button color="inherit" onClick={() => this.navigateTo('emailnatalie.html')}>
-            Email Me
-          </Button> */}
-
-          <Button color="inherit" href={'mailto:nat82alie@gmail.com'}>
-            Email Me
+          <Button color="inherit" className={this.dropdownClass}
+            onClick={() => this.navigateTo('blm.html')}
+            onMouseEnter={() => this.openDropdown(blmDropdown)}
+            onMouseLeave={this.closeDropdown}>
+            BLM
           </Button>
 
           <div id="navbar-secondary"
