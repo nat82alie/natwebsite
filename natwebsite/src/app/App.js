@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './navbar/navbar';
+import Footer from './footer/footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from '../routes';
 import './App.css';
@@ -19,6 +20,7 @@ class App extends Component {
         <Router>
           <Routes/>
         </Router>
+        <Footer/>
         <div id="whitespace-chunk"/>
       </div>
     );

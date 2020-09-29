@@ -1,0 +1,34 @@
+#footer-container {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: #e3923b;
+  padding: 10px;
+}
+
+#footer-container i {
+  color: black;
+}
+
+.icon-btn,
+#my-links-container .TouchRipple-root {
+  border-radius: 0% !important;
+}
+/* .icon-btn:hover {
+  border-radius: 0% !important;
+} */
+
+
+/* button.MuiButtonBase-root {
+  width: 20px;
+  height: 20px;
+}
+span.MuiButton-label {
+
+}
+span.MuiButton-label i:before {
+}
+span.TouchRipple-root {
+  width: 20px;
+  height: 20px;
+} */
