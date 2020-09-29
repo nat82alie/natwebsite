@@ -19,6 +19,7 @@ class App extends Component {
         <Router>
           <Routes/>
         </Router>
+        <div id="whitespace-chunk"/>
       </div>
     );
   };

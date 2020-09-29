@@ -2,6 +2,10 @@
   padding: 20px;
 }
 
+#whitespace-chunk {
+  height: 60px;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
