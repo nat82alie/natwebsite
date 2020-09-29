@@ -41,8 +41,8 @@ class Home extends Component {
         </Typography>
         <Typography variant={pVariant} className={className}>
           I grew up in Washington, have been in California for the past 6 years, and am currently squatting in Minnesota
-          until I find a job wherever that may be. And by "wherever" I mean Colorado, Oregon, Washington, Minnesota, or California,
-          because I do have preferences.
+          until I find a job wherever that may be. And by "wherever" I mean Colorado, Oregon, Washington, Minnesota, California,
+          or Canada, because I do have preferences.
         </Typography>
         <Typography variant={pVariant} className={className}>
           Also, here is a photo of me so you can put a face to the name:
