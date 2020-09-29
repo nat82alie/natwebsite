@@ -1,5 +1,6 @@
 {
   "name": "natwebsite",
+  "homepage": "https://nat82alie@github.io/natwebsite/public",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
